@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java2018_wtorek_2.iml" filepath="$PROJECT_DIR$/Java2018_wtorek_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../ZarzJakoscia_2018/BankApp/src/main/main.iml" filepath="$PROJECT_DIR$/../../../ZarzJakoscia_2018/BankApp/src/main/main.iml" />
     </modules>
   </component>
 </project>

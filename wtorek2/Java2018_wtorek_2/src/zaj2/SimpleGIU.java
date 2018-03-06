@@ -1,5 +1,7 @@
 package zaj2;
 
+import zaj3.*;
+
 import javax.swing.*;
 import java.awt.event.*;
 
@@ -67,6 +69,14 @@ public class SimpleGIU {
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
+        Figure[] fs = new Figure[]{
+                new Circle(125,143,8),
+                new Rectangle(12,13,55,2),
+                new Square(7,177,23)
+        };
+        Figure f = CompositeFigure.create(1,1,fs);
+
         drawingPanel = new DrawingPanel();
+        ((DrawingPanel) drawingPanel).figure=f;
     }
 }

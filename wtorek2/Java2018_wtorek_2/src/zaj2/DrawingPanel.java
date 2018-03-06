@@ -1,5 +1,7 @@
 package zaj2;
 
+import zaj3.Figure;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -9,6 +11,7 @@ import java.awt.*;
 public class DrawingPanel extends JPanel {
 
     public Ball ball = new Ball(23,45,40);
+    public Figure figure;
 
     @Override
     public void paint(Graphics g) {
@@ -24,5 +27,6 @@ public class DrawingPanel extends JPanel {
         g.fillOval( ball.x-ball.r,
                     -ball.y-ball.r,
                     2*ball.r,2*ball.r);
+        figure.draw(g);
     }
 }
